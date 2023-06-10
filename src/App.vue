@@ -6,7 +6,7 @@ const list = ref(Array.from({ length: 10000 }, (_, i) => i + 1))
 </script>
 
 <template>
-  <VirtualList :list="list" />
+  <VirtualList :data="list" />
 </template>
 
 <style scoped>
