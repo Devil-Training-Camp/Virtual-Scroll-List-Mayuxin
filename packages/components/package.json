@@ -1,0 +1,24 @@
+{
+  "name": "@yuxin/ui",
+  "private": false,
+  "version": "0.0.1",
+  "type": "module",
+  "main": "./ui/lib/index.js",
+  "module": "./ui/es/index.js",
+  "files": ["ui"],
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.2.47"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.1.0",
+    "typescript": "^5.0.2",
+    "vite": "^4.3.9",
+    "vite-plugin-vue-setup-extend": "^0.4.0",
+    "vue-tsc": "^1.4.2"
+  }
+}

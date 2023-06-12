@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup lang="ts" name="VirtualScrollList">
 import { computed, defineProps, onMounted, ref, toRefs, withDefaults, onUpdated, nextTick, watch } from 'vue'
 
 interface Props {

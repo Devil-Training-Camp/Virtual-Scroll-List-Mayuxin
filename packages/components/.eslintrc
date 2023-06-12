@@ -1,0 +1,6 @@
+{
+  "extends": "../../.eslintrc", // 注意这里的不同
+  "parserOptions": {
+    "project": "tsconfig.json"
+  }
+}

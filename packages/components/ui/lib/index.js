@@ -1,0 +1,1 @@
+"use strict";Object.defineProperties(exports,{__esModule:{value:!0},[Symbol.toStringTag]:{value:"Module"}});const l=require("./src/index.js"),u=require("./src/VirtualScrollList/index.js"),i={install:e=>l.default.forEach(t=>e.use(t))};exports.VirtualScrollList=u.default;exports.default=i;
