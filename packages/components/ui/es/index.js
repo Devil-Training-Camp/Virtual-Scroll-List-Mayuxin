@@ -1,5 +1,5 @@
-import r from "./src/index.js";
-import { default as f } from "./src/VirtualScrollList/index.js";
+import r from "./index2.js";
+import { default as f } from "./VirtualScrollList/index.js";
 const e = {
   install: (o) => r.forEach((t) => o.use(t))
 };

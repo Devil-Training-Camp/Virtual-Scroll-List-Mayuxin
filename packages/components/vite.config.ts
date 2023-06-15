@@ -20,7 +20,8 @@ export default defineConfig({
           entryFileNames: '[name].js',
           preserveModules: true,
           exports: 'named',
-          dir: resolve(__dirname, './ui/es')
+          dir: resolve(__dirname, './ui/es'),
+          preserveModulesRoot: 'src'
         },
         {
           format: 'cjs',
@@ -30,13 +31,13 @@ export default defineConfig({
           exports: 'named',
           //配置打包根目录
           dir: resolve(__dirname, './ui/lib'),
+          preserveModulesRoot: 'src'
         }
       ]
     },
     lib: {
       entry: './index.ts',
-      name: 'mayuxin',
-      formats: ['es', 'cjs']
+      name: 'mayuxin'
     }
   }
 })
