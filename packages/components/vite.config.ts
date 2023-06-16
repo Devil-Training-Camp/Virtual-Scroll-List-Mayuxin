@@ -1,7 +1,7 @@
+import { resolve } from 'node:path'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import VueSetupExtend from 'vite-plugin-vue-setup-extend'
-import { resolve } from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -9,7 +9,7 @@ export default defineConfig({
   base: './',
   build: {
     target: 'modules',
-    outDir: 'es',  // 打包文件目录
+    outDir: 'es', // 打包文件目录
     minify: true,
     rollupOptions: {
       external: ['vue'],
@@ -21,23 +21,23 @@ export default defineConfig({
           preserveModules: true,
           exports: 'named',
           dir: resolve(__dirname, './ui/es'),
-          preserveModulesRoot: 'src'
+          preserveModulesRoot: 'src',
         },
         {
           format: 'cjs',
           entryFileNames: '[name].js',
-          //让打包目录和我们目录对应
+          // 让打包目录和我们目录对应
           preserveModules: true,
           exports: 'named',
-          //配置打包根目录
+          // 配置打包根目录
           dir: resolve(__dirname, './ui/lib'),
-          preserveModulesRoot: 'src'
-        }
-      ]
+          preserveModulesRoot: 'src',
+        },
+      ],
     },
     lib: {
       entry: './index.ts',
-      name: 'mayuxin'
-    }
-  }
+      name: 'mayuxin',
+    },
+  },
 })

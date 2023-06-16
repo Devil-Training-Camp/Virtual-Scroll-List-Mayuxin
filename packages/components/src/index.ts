@@ -1,7 +1,7 @@
-import VirtualScrollList from "./VirtualScrollList";
+import VirtualScrollList from './VirtualScrollList'
 
 export {
-  VirtualScrollList
+  VirtualScrollList,
 }
 
-export default [ VirtualScrollList ]
+export default [VirtualScrollList]
